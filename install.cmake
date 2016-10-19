@@ -1,20 +1,20 @@
-# CMake Ada - Ada language support for CMake
+# CMake PM - PM language support for CMake
 # Copyright (C) 2014 offa
 #
-# This file is part of CMake Ada.
+# This file is part of CMake PM.
 #
-# CMake Ada is free software: you can redistribute it and/or modify
+# CMake PM is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 #
-# CMake Ada is distributed in the hope that it will be useful,
+# CMake PM is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with CMake Ada. If not, see <http://www.gnu.org/licenses/>.
+# along with CMake PM. If not, see <http://www.gnu.org/licenses/>.
 
 cmake_minimum_required(VERSION 2.6)
 
