@@ -22,6 +22,8 @@ else()
     set(CMAKE_PM_OUTPUT_EXTENSION .o)
 endif()
 
+set(CMAKE_INCLUDE_FLAG_PM${PM_DIALECT} "-I")       # -I
+
 set(CMAKE_PM_SOURCE_FILE_EXTENSIONS pm)
 
 
