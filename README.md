@@ -1,7 +1,7 @@
-# [CMake Ada](https://github.com/offa/cmake-ada)
+# [CMake Prolog Mali](https://github.com/kwon-young/cmake-pm)
 
-Ada language support for CMake.
-
+Prolog Mali language support for CMake.
+https://gforge.inria.fr/projects/prolog-mali/
 
 ## Installation
 
@@ -16,7 +16,7 @@ Copy the content of `Modules` directory into `Modules` of the CMake installation
 
 ## Usage
 
-The Ada language is enabled by either `project(<NAME> ADA)` or `enable_language(ADA)` within the `CMakeLists.txt`.
+The Prolog Mali language is enabled by either `project(<NAME> PM)` or `enable_language(PM)` within the `CMakeLists.txt`.
 
 CMake is used as usual:
 
@@ -34,29 +34,26 @@ $ make
 ```cmake
 cmake_minium_required(VERSION 2.6)
 
-project(AdaTest)
+project(PmTest)
 
 
-# Enable Ada support
-enable_language(ADA)
+# Enable Prolog Mali support
+enable_language(PM)
 
 # Build an executable with a source file and a package
-add_executable(${PROJECT_NAME} src/Main.adb src/TestPackge.ads)
+add_executable(${PROJECT_NAME} src/m1.pm src/m2.pm)
 
-# Build a (static) library
-add_library(${PROJECT_NAME}-static src/TestLib.adb)
 ```
 
-This will build an application `AdaTest` and a static library `libAdaTest-static.a`.
+This will build an application `PmTest`.
 
 
 ## Limitations
 
-Since this modul is in a very early development state, there are some limitations at the moment:
+Since this module is in a very early development state, there are some limitations at the moment:
 
- - only *GNAT* is supported
- - `gnat make` is used instead of `gnat compile` / `gnat bind` / `gnat link`
- - Shared libraries / modules are not supported yet
+ - only pmc compiler is supported
+ - tested only on linux
 
 
 ## License
