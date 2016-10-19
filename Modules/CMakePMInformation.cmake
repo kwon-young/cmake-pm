@@ -17,9 +17,9 @@
 # along with CMake PM. If not, see <http://www.gnu.org/licenses/>.
 
 if(UNIX)
-    set(CMAKE_PM_OUTPUT_EXTENSION .o .c .aux .i)
+    set(CMAKE_PM_OUTPUT_EXTENSION .o)
 else()
-    set(CMAKE_PM_OUTPUT_EXTENSION .o .c .aux .i)
+    set(CMAKE_PM_OUTPUT_EXTENSION .o)
 endif()
 
 set(CMAKE_PM_SOURCE_FILE_EXTENSIONS pm)
